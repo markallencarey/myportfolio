@@ -9,14 +9,18 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-
-  h1 {
-    color: $snow;
-  }
 }
 
 .hero-logo {
   margin-top: 2vh;
+}
+
+.hero-title {
+  color: $snow;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .music-hero-div {
@@ -25,7 +29,6 @@
 
 .music-hero-guitarist {
   margin-left: 10px;
-
 }
 
 .arrow-down {
@@ -54,3 +57,16 @@
   from {width: 0}
   to {width: 100%}
 }
+
+// .typewriter-title {
+//   color: $snow;
+//   font-size: 40px;
+//   text-align: center;
+// }
+
+// .typewriter-cursor {
+//   color: $snow;
+//   font-size: 40px;
+//   opacity: 50%;
+//   animation: blinkingCursor 5s;
+// }
