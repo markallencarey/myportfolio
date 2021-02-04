@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap'
 import { ReactComponent as Logo } from '../assets/Logo-3.svg'
 import { IoIosArrowDown } from 'react-icons/io'
 import Stack from './Stack'
+import Projects from './Projects'
 // import Typewriter from 'typewriter-effect'
 
 const Home = (props) => {
@@ -21,6 +22,7 @@ const Home = (props) => {
       </div>
       <Stack />
       <IoIosArrowDown className='arrow-down' size='50px' />
+      {/* <Projects /> */}
     </Container>
   )
 }
