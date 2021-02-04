@@ -1,0 +1,54 @@
+@import '../base-scss/variables';
+@import '../base-scss/mixins';
+
+.Home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  h1 {
+    color: $snow;
+  }
+}
+
+.hero-logo {
+  // position: relative;
+  margin-top: 10vh;
+}
+
+.music-hero-div {
+  display: flex;
+}
+
+.music-hero-producer {
+  margin-right: 5px;
+}
+
+.music-hero-guitarist {
+  margin-left: 5px;
+}
+
+.arrow-down {
+  color: $snow;
+  position: absolute;
+  bottom: 1vh;
+  opacity: 60%;
+  animation: bounce 2s;
+  animation-iteration-count: 5;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0% {
+    margin-bottom: 50px;
+    opacity: 0%;
+  }
+
+  100% {
+    margin-bottom: 0px;
+    opacity: 60%;
+  }
+}
