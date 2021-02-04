@@ -9,32 +9,16 @@ const Home = (props) => {
 
   return (
     <Container className='Home'>
-      <div className="hero"><Logo className='hero-logo' />
-      {/* <Typewriter
-      className='hero-title'
-      options={{
-      skipAddStyles: true,
-      }}
-      onInit={typewriter => {
-      typewriter.typeString('Full Stack Web Developer.')
-      .callFunction(() => {
-      console.log('String typed out!')
-      })
-      .pauseFor(2500)
-      .deleteAll()
-      .callFunction(() => {
-      console.log('All strings were deleted')
-      })
-      .start()
-      }}
-      /> */}
-      <div>
-      <h1>Full Stack Web Developer.</h1>
-      <div className='music-hero-div'>
-      <h1 className='music-hero-producer'>Music Producer.</h1>
-      <h1 className='music-hero-guitarist'>Guitarist.</h1>
+      <div className="hero">
+        <Logo className='hero-logo' />
+        <div className='hero-title'>
+          <h1>Full Stack Web Developer.</h1>
+          <div className='music-hero-div'>
+            <h1 className='music-hero-producer'>Music Producer.</h1>
+            <h1 className='music-hero-guitarist'>Guitarist.</h1>
+          </div>
+        </div>
       </div>
-      </div></div>
       <Stack />
       <IoIosArrowDown className='arrow-down' size='50px' />
     </Container>
@@ -42,3 +26,31 @@ const Home = (props) => {
 }
 
 export default Home
+
+{/* <div>
+<Typewriter
+  options={{
+    // loop: true,
+    wrapperClassName: 'typewriter-title',
+    cursorClassName: 'typewriter-cursor'
+  }}
+  onInit={typewriter => {
+    typewriter.typeString('Full Stack Web Developer.')
+      .pauseFor(11000)
+      .start()
+  }}
+/>
+<Typewriter
+  options={{
+    // loop: true,
+    wrapperClassName: 'typewriter-title',
+    cursorClassName: 'typewriter-cursor'
+  }}
+  onInit={typewriter => {
+    typewriter.pauseFor(4000)
+      .typeString('Music Producer. Guitarist.')
+      .pauseFor(5000)
+      .start()
+  }}
+/>
+</div> */}
