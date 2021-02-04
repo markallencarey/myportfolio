@@ -17,6 +17,8 @@ import Redux_Logo from '../assets/stack-logos/redux.svg'
 import Sass_Logo from '../assets/stack-logos/sass-1.svg'
 import Stripe_Logo from '../assets/stack-logos/stripe-4.svg'
 
+import { AiFillGithub } from 'react-icons/ai'
+
 
 const Stack = (props) => {
 
@@ -24,66 +26,69 @@ const Stack = (props) => {
     <Container className='Stack'>
       <div className='stack-div'>
         <Image className='stack-img' src={HTML_Logo} />
-        <h6>HTML5</h6>
+        <p>HTML5</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={JS_Logo} />
-        <h6>JAVASCRIPT</h6>
+        <p>JAVASCRIPT</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={CSS_Logo} />
-        <h6>CSS3</h6>
+        <p>CSS3</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Node_Logo} />
-        <h6>NODEJS</h6>
+        <p>NODEJS</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Express_Logo} />
-        <h6>EXPRESS</h6>
+        <p>EXPRESSJS</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Sass_Logo} />
-        <h6>SASS</h6>
+        <p>SASS</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={React_Logo} />
-        <h6>REACT</h6>
+        <p>REACT</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Postgres_Logo} />
-        <h6>POSTGRES</h6>
+        <p>POSTGRES</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Git_Logo} />
-        <h6>GIT</h6>
+        <p>GIT</p>
       </div>
       <div className='stack-div'>
-        <Image className='stack-img' src={GitHub_Logo} />
-        <h6>GITHUB</h6>
+        <AiFillGithub
+          className='gitHub'
+          size='80px'
+        />
+        <p>GITHUB</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Stripe_Logo} />
-        <h6>STRIPE</h6>
+        <p>STRIPE</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Postman_Logo} />
-        <h6>POSTMAN</h6>
+        <p>POSTMAN</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Redux_Logo} />
-        <h6>REDUX</h6>
+        <p>REDUX</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Python_Logo} />
-        <h6>PYTHON</h6>
+        <p>PYTHON</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Bootstrap_Logo} />
-        <h6>BOOTSTRAP</h6>
+        <p>BOOTSTRAP</p>
       </div>
       <div className='stack-div'>
-        <h6>OTHER:</h6>
+        <p>OTHER:</p>
         <p>AXIOS</p>
         <p>MASSIVE</p>
         <p>SPANISH</p>
