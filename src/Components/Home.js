@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
 import { ReactComponent as Logo } from '../assets/Logo-3.svg'
 import { IoIosArrowDown } from 'react-icons/io'
@@ -8,21 +8,26 @@ import Projects from './Projects'
 
 const Home = (props) => {
 
+  // const [currentPage, setCurrentPage] = useState(0)
+
+  // function handlePageChange(number) {
+  //   setCurrentPage(number)
+  // }
+
   return (
     <Container className='Home'>
-      <div className="hero">
-        <Logo className='hero-logo' />
-        <div className='hero-title'>
-          <h1>Full Stack Web Developer.</h1>
-          <div className='music-hero-div'>
-            <h1 className='music-hero-producer'>Music Producer.</h1>
-            <h1 className='music-hero-guitarist'>Guitarist.</h1>
+        <div className="hero">
+          <Logo className='hero-logo' />
+          <div className='hero-title'>
+            <h1>Full Stack Web Developer.</h1>
+            <div className='music-hero-div'>
+              <h1 className='music-hero-producer'>Music Producer.</h1>
+              <h1 className='music-hero-guitarist'>Guitarist.</h1>
+            </div>
           </div>
         </div>
-      </div>
-      <Stack />
-      <IoIosArrowDown className='arrow-down' size='50px' />
-      {/* <Projects /> */}
+        <Stack />
+        <IoIosArrowDown className='arrow-down' size='50px' />
     </Container>
   )
 }
