@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 const Contact = (props) => {
 
   return (
-    <Container className='Contact'>
+    <Container fluid className='Contact'>
       Contact.js
     </Container>
   )

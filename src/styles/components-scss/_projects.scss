@@ -2,5 +2,5 @@
 @import '../base-scss/mixins';
 
 .Projects {
-  
+  @include page-layout();
 }

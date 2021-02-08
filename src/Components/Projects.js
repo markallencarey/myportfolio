@@ -1,10 +1,15 @@
 import React from 'react'
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import { IoIosArrowDown } from 'react-icons/io'
+
 const Projects = (props) => {
 
   return (
-    <Container className='Projects'>
-      Projects.js
+    <Container fluid className='Projects'>
+      <Row>
+        <Col></Col>
+      </Row>
+      <IoIosArrowDown className='arrow-down' size='50px' />
     </Container>
   )
 }

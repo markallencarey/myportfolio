@@ -2,5 +2,37 @@
 @import '../base-scss/mixins';
 
 .Resume {
-  
+  @include page-layout();
+}
+
+.Carousel {
+  height: 90%;
+  width: 100%;
+  padding: 0px 150px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  // bottom: 2vh;
+
+  strong {
+    color: $fieryRose;
+  }
+
+}
+
+.Carousel-Item {
+  height: 100%;
+  width: 100%;
+
+}
+
+.Carousel-Content {
+  height: 100%;
+  width: 100%;
+}
+
+.Carousel-Title {
+  text-align: center;
+  padding: 20px 0px;
+  color: $azure;
 }

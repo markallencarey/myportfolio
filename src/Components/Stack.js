@@ -23,7 +23,7 @@ import { AiFillGithub } from 'react-icons/ai'
 const Stack = (props) => {
 
   return (
-    <Container className='Stack'>
+    <Container fluid className='Stack'>
       <div className='stack-div'>
         <Image className='stack-img' src={HTML_Logo} />
         <p>HTML5</p>
