@@ -2,5 +2,35 @@
 @import '../base-scss/mixins';
 
 .Projects {
-  
+  @include page-layout();
+  color: $eerieBlack;
 }
+
+.Card {
+  width: 25vw;
+  height: 50vh;
+}
+
+.card-deck {
+  padding-top: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.card-title {
+}
+
+.card-text {
+}
+
+// a {
+//   color: $eerieBlack;
+//   text-decoration: none;
+// }
