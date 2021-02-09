@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
-import { Container, Carousel } from "react-bootstrap";
+import { Container, Carousel, Image} from "react-bootstrap";
 import { IoIosArrowDown } from 'react-icons/io'
+import MyPic from '../assets/myPic.jpeg'
+import MyPic2 from '../assets/myPic2.jpeg'
+import MyPic3 from '../assets/myPic3.jpeg'
 
 const Resume = (props) => {
 
@@ -15,6 +18,21 @@ const Resume = (props) => {
         <Carousel.Item className='Carousel-Item'>
           <Container className='Carousel-Title'>
             <h3>ABOUT</h3>
+            <Image
+              className='resume-img'
+              rounded
+              xs={6} med={4}
+              src={MyPic} />
+            <Image
+              className='resume-img'
+              rounded
+              xs={6} med={4}
+              src={MyPic2} />
+            <Image
+              className='resume-img'
+              rounded
+              xs={6} med={4}
+              src={MyPic3} />
           </Container>
           <Container>
             <h1>Mark Carey</h1>

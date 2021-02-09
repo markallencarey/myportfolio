@@ -3,4 +3,18 @@
 
 .Contact {
   @include page-layout();
+  justify-content: center;
+
+  h1 {
+    color: $azure;
+  }
+
+  a {
+    text-decoration: none;
+    color: $snow;
+  }
+
+  a:hover {
+    color: $azure;
+  }
 }
