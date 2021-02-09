@@ -1,5 +1,9 @@
 require('dotenv').config()
+const path = require('path')
+const express = require('express')
 const { SERVER_PORT } = process.env
+
+const app = express()
 
 app.use(express.static(`${__dirname}/../build`))
 
