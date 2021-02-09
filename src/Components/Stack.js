@@ -88,7 +88,7 @@ const Stack = (props) => {
         <p>BOOTSTRAP</p>
       </div>
       <div className='stack-div'>
-        <p>OTHER:</p>
+        <p><strong>OTHER:</strong></p>
         <p>AXIOS</p>
         <p>MASSIVE</p>
         <p>SPANISH</p>

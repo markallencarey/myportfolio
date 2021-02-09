@@ -40,6 +40,7 @@ const Resume = (props) => {
             <p>801.360.3072 | markallencarey@gmail.com | linkedin.com/in/markallencarey | markcarey.dev | github.com/markallencarey</p>
             <p>Available for in-person or remote | Lehi, UT 84043</p>
           </Container>
+          <br />
           <Container>
             <h2>Skills</h2>
             <p>HTML5 | JAVASCRIPT | CSS3 | NODEJS | EXPRESS | SASS | REACT | POSTGRES | GIT | SQL | STRIPE | POSTMAN | AXIOS | MASSIVE | REDUX | PYTHON | BOOTSTRAP | SPANISH</p>

@@ -1,3 +1,5 @@
+@import '../base-scss/variables';
+
 @mixin arrow-down {
     color: $snow;
     position: relative;
@@ -13,19 +15,7 @@
       opacity: 0%;
     }
 
-    25% {
-      opacity: 5%;
-    }
-
-    40% {
-      opacity: 10%;
-    }
-
-    50% {
-      opacity: 30%;
-    }
-
-    75% {
+    80% {
       opacity: 60%;
     }
   
