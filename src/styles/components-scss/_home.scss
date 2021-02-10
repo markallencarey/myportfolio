@@ -6,34 +6,34 @@
   color: $snow;
 }
 
-.hero-logo {
-  margin-top: 4vh;
-}
+// .hero-logo {
+//   margin-top: 4vh;
+// }
 
-.hero-title {
-  color: $snow;
-  font-size: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// .hero-title {
+  // color: $snow;
+//   font-size: 32px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
-.music-hero-div {
-  display: flex;
-}
+// .music-hero-div {
+//   display: flex;
+// }
 
-.music-hero-guitarist {
-  margin-left: 10px;
-}
+// .music-hero-guitarist {
+//   margin-left: 10px;
+// }
 
-.arrow-down {
-  @include arrow-down();
-}
+// .arrow-down {
+//   @include arrow-down();
+// }
 
-@keyframes typing {
-  from {width: 0}
-  to {width: 100%}
-}
+// @keyframes typing {
+//   from {width: 0}
+//   to {width: 100%}
+// }
 
 // .typewriter-title {
 //   color: $snow;

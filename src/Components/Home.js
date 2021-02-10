@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Container } from 'react-bootstrap'
-import { ReactComponent as Logo } from '../assets/Logo-3.svg'
+import { Container, Row, Col, Image } from 'react-bootstrap'
+// import { ReactComponent as Logo } from '../assets/Logo.svg'
+import Logo from '../assets/Logo.svg'
 import { IoIosArrowDown } from 'react-icons/io'
 import Stack from './Stack'
 // import Typewriter from 'typewriter-effect'
@@ -15,18 +16,26 @@ const Home = (props) => {
 
   return (
     <Container fluid className='Home'>
-        <div className="hero">
-          <Logo className='hero-logo' />
-          <div className='hero-title'>
-            <h1>Full Stack Web Developer.</h1>
-            <div className='music-hero-div'>
-              <h1 className='music-hero-producer'>Music Producer.</h1>
-              <h1 className='music-hero-guitarist'>Guitarist.</h1>
-            </div>
-          </div>
-        </div>
+      <Row>
+        <Image src={Logo} fluid className='hero-logo' />
+      </Row>
+
+      {/* <Row className='hero-title'> */}
+      <Row>
+        <h1>Full Stack Web Developer.</h1>
+      </Row>
+      <Row>
+        <h1 className='music-hero-producer'>Music Producer. Guitarist.</h1>
+      </Row>
+
+      <Row>
         <Stack />
+      </Row>
+
+      <Row>
         <IoIosArrowDown className='arrow-down' size='50px' />
+      </Row>
+
     </Container>
   )
 }
