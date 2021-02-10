@@ -9,6 +9,10 @@
 .Card {
   width: 25vw;
   height: 50vh;
+
+  a {
+    color: $azure;
+  }
 }
 
 .card-deck {
@@ -24,12 +28,12 @@
   border: none;
 }
 
-.card-title {
-}
+// .card-title {
+// }
 
 .card-text {
-  color: $eerieBlack;
-  opacity: 100%;
-  font-size: 16px;
-  margin-left: -15px;
+    color: $eerieBlack;
+    opacity: 100%;
+    font-size: 16px;
+    margin-left: -15px;
 }

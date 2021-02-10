@@ -3293,23 +3293,7 @@
   optionalDependencies:
     "fsevents" "^1.2.7"
 
-"chokidar@^3.4.0":
-  "integrity" "sha512-9+s+Od+W0VJJzawDma/gvBNQqkTiqYTWLuZoyAsivsI4AaWTCzHG06/TMjsf1cYe9Cb97UCEhjz7HvnPk2p/tw=="
-  "resolved" "https://registry.npmjs.org/chokidar/-/chokidar-3.5.1.tgz"
-  "version" "3.5.1"
-  dependencies:
-    "anymatch" "~3.1.1"
-    "braces" "~3.0.2"
-    "fsevents" "~2.3.1"
-    "glob-parent" "~5.1.0"
-    "is-binary-path" "~2.1.0"
-    "is-glob" "~4.0.1"
-    "normalize-path" "~3.0.0"
-    "readdirp" "~3.5.0"
-  optionalDependencies:
-    "fsevents" "~2.3.1"
-
-"chokidar@^3.4.1":
+"chokidar@^3.4.0", "chokidar@^3.4.1":
   "integrity" "sha512-9+s+Od+W0VJJzawDma/gvBNQqkTiqYTWLuZoyAsivsI4AaWTCzHG06/TMjsf1cYe9Cb97UCEhjz7HvnPk2p/tw=="
   "resolved" "https://registry.npmjs.org/chokidar/-/chokidar-3.5.1.tgz"
   "version" "3.5.1"
@@ -4652,12 +4636,7 @@
   "resolved" "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz"
   "version" "1.0.3"
 
-"escape-string-regexp@^1.0.2":
-  "integrity" "sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ="
-  "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
-  "version" "1.0.5"
-
-"escape-string-regexp@^1.0.5":
+"escape-string-regexp@^1.0.2", "escape-string-regexp@^1.0.5":
   "integrity" "sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ="
   "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
   "version" "1.0.5"

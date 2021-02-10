@@ -26,72 +26,72 @@ const Stack = (props) => {
     <Container fluid className='Stack'>
       <div className='stack-div'>
         <Image className='stack-img' src={HTML_Logo} />
-        <p>HTML5</p>
+        <p className='stack-title'>HTML5</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={JS_Logo} />
-        <p>JAVASCRIPT</p>
+        <p className='stack-title'>JAVASCRIPT</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={CSS_Logo} />
-        <p>CSS3</p>
+        <p className='stack-title'>CSS3</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Node_Logo} />
-        <p>NODEJS</p>
+        <p className='stack-title'>NODEJS</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Express_Logo} />
-        <p>EXPRESSJS</p>
+        <p className='stack-title'>EXPRESSJS</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Sass_Logo} />
-        <p>SASS</p>
+        <p className='stack-title'>SASS</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={React_Logo} />
-        <p>REACT</p>
+        <p className='stack-title'>REACT</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Postgres_Logo} />
-        <p>POSTGRES</p>
+        <p className='stack-title'>POSTGRES</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Git_Logo} />
-        <p>GIT</p>
+        <p className='stack-title'>GIT</p>
       </div>
       <div className='stack-div'>
         <AiFillGithub
           className='gitHub'
           size='80px'
         />
-        <p>GITHUB</p>
+        <p className='stack-title'>GITHUB</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Stripe_Logo} />
-        <p>STRIPE</p>
+        <p className='stack-title'>STRIPE</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Postman_Logo} />
-        <p>POSTMAN</p>
+        <p className='stack-title'>POSTMAN</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Redux_Logo} />
-        <p>REDUX</p>
+        <p className='stack-title'>REDUX</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Python_Logo} />
-        <p>PYTHON</p>
+        <p className='stack-title'>PYTHON</p>
       </div>
       <div className='stack-div'>
         <Image className='stack-img' src={Bootstrap_Logo} />
-        <p>BOOTSTRAP</p>
+        <p className='stack-title'>BOOTSTRAP</p>
       </div>
       <div className='stack-div'>
-        <p><strong>OTHER:</strong></p>
-        <p>AXIOS</p>
-        <p>MASSIVE</p>
-        <p>SPANISH</p>
+        <p className='stack-title'><strong>OTHER:</strong></p>
+        <p className='stack-title'>AXIOS</p>
+        <p className='stack-title'>MASSIVE</p>
+        <p className='stack-title'>SPANISH</p>
       </div>
     </Container>
   )

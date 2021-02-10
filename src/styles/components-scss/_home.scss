@@ -3,6 +3,7 @@
 
 .Home {
   @include page-layout();
+  color: $snow;
 }
 
 .hero-logo {
