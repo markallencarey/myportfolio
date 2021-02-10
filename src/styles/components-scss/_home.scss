@@ -3,32 +3,37 @@
 
 .Home {
   @include page-layout();
-  color: $snow;
 }
 
-// .hero-logo {
-//   margin-top: 4vh;
-// }
+.hero-logo-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: orange;
+}
 
-// .hero-title {
-  // color: $snow;
-//   font-size: 32px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
+.hero-logo {
+  height: 46vh;
+}
 
-// .music-hero-div {
-//   display: flex;
-// }
+.hero-title-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 46vh;
+}
 
-// .music-hero-guitarist {
-//   margin-left: 10px;
-// }
+.hero-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-// .arrow-down {
-//   @include arrow-down();
-// }
+.arrow-down-row {
+  @include arrow-down();
+}
 
 // @keyframes typing {
 //   from {width: 0}

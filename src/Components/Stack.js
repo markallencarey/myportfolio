@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Card, Image } from 'react-bootstrap'
+import { Container, Card, Image, Col } from 'react-bootstrap'
 import Axios_Logo from '../assets/stack-logos/axios-logo.png'
 import Bootstrap_Logo from '../assets/stack-logos/bootstrap-5-1.svg'
 import CSS_Logo from '../assets/stack-logos/css-5.svg'
