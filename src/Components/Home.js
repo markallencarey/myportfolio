@@ -3,7 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 // import { ReactComponent as Logo } from '../assets/Logo.svg'
 import Logo from '../assets/Logo.svg'
 import { IoIosArrowDown } from 'react-icons/io'
-// import Typewriter from 'typewriter-effect'
+import Typewriter from 'typewriter-effect'
 
 const Home = (props) => {
 
@@ -15,8 +15,8 @@ const Home = (props) => {
 
   return (
     <Container fluid className='Home'>
-      <Row className='hero-logo-row'>
-        <Col className='hero-log-col'>
+      <Row>
+        <Col>
           <Image src={Logo} fluid className='hero-logo' />
         </Col>
       </Row>

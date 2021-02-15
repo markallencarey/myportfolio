@@ -2,38 +2,43 @@
 @import '../base-scss/mixins';
 
 .Stack {
-  // width: 100vw;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-wrap: wrap;
+  @include page-layout();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
-// .stack-div {
-//   margin: 5px;
-//   min-width: 120px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-end;
-//   align-items: center;
-//   border-radius: 10px;
-// }
+.stack-list {
+  height: 92vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: cadetblue;
+}
 
-// .stack-title {
-//   padding: 0;
-//   margin: 0;
-//   color: $snow;
-//   opacity: 50%;
-//   font-size: 14px;
-// }
+.stack-Container {
+  height: 140px;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+}
 
 .stack-img {
+  width: 60px;
   height: 70px;
-  max-width: 100px;
-  padding-bottom: 20px;
 }
 
-// .gitHub {
-//   color: $snow;
-//   padding-bottom: 20px;
-// }
+.stack-title {
+  font-size: 12px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}

@@ -5,14 +5,6 @@
   @include page-layout();
 }
 
-.hero-logo-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: orange;
-}
-
 .hero-logo {
   height: 46vh;
 }
@@ -41,7 +33,7 @@
 // }
 
 // .typewriter-title {
-//   color: $snow;
+  // color: $snow;
 //   font-size: 40px;
 //   text-align: center;
 // }
