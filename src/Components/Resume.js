@@ -1,11 +1,24 @@
 import React, { useState } from 'react'
-import { Container, Carousel, Image, Row } from "react-bootstrap";
+import { Container, Carousel, Image, Row, Modal } from "react-bootstrap";
 import { IoIosArrowDown } from 'react-icons/io'
 import MyPic from '../assets/myPics/myPic-tiny.jpeg'
 import MyPic2 from '../assets/myPics/myPic2-tiny.jpeg'
 import MyPic3 from '../assets/myPics/myPic3-tiny.jpeg'
 
 const Resume = (props) => {
+
+  const [show1, setShow1] = useState(false)
+  const [show2, setShow2] = useState(false)
+  const [show3, setShow3] = useState(false)
+
+  const handleClose1 = () => setShow1(false)
+  const handleShow1 = () => setShow1(true)
+  
+  const handleClose2 = () => setShow2(false)
+  const handleShow2 = () => setShow2(true)
+  
+  const handleClose3 = () => setShow3(false)
+  const handleShow3 = () => setShow3(true)
 
   const interval = (1000 * 1000)
 
@@ -24,24 +37,82 @@ const Resume = (props) => {
                   className='resume-img'
                   rounded
                   xs={6} med={4}
-                  src={MyPic} />
+                  src={MyPic}
+                  onClick={handleShow1}
+                />
                 <Image
                   className='resume-img'
                   rounded
                   xs={6} med={4}
-                  src={MyPic2} />
+                  src={MyPic2}
+                  onClick={handleShow2}
+                />
                 <Image
                   className='resume-img'
                   rounded
                   xs={6} med={4}
-                  src={MyPic3} />
+                  src={MyPic3}
+                  onClick={handleShow3}
+                />
               </Container>
+              <Container className='click-photo'>
+                <h6>Click image for enlarged photo</h6>
+              </Container>
+              <Modal
+                centered
+                className='resume-modal'
+                show={show1}
+                onHide={handleClose1}
+              >
+                <Modal.Header closeButton />
+                <Modal.Body>
+                  <Image
+                    fluid
+                    rounded
+                    className='resume-img-modal'
+                    src={MyPic}
+                  />
+                </Modal.Body>
+              </Modal>
+              <Modal
+                centered
+                className='resume-modal'
+                show={show2}
+                onHide={handleClose2}
+              >
+                <Modal.Header closeButton />
+                <Modal.Body>
+                  <Image
+                    fluid
+                    rounded
+                    className='resume-img-modal'
+                    src={MyPic2}
+                  />
+                </Modal.Body>
+              </Modal>
+              <Modal
+                centered
+                className='resume-modal'
+                show={show3}
+                onHide={handleClose3}
+              >
+                <Modal.Header closeButton />
+                <Modal.Body>
+                  <Image
+                    fluid
+                    rounded
+                    className='resume-img-modal'
+                    src={MyPic3}
+                  />
+                </Modal.Body>
+              </Modal>
             </Container>
-            {/* <Container>
-              <h1>Mark Carey</h1>
-              <h2>Full-Stack Web Developer</h2>
-            </Container> */}
             <br />
+            <Container className='Carousel-Info'>
+              <h2>LEHI, UTAH</h2>
+              <h2>Interests</h2>
+              <p>MUSIC PRODUCTION | GUITAR | SONGWRITING | CELLO | BYU FOOTBALL | BYU BASKETBALL | LA DODGERS | COOKING | PHOTOGRAPHY | BOARD GAMES | STAR WARS | HARRY POTTER | MARVEL</p>
+            </Container>
             <Container className='Carousel-Info'>
               <h2>Skills</h2>
               <p>HTML5 | JAVASCRIPT | CSS3 | NODEJS | EXPRESS | SASS | REACT | POSTGRES | GIT | SQL | STRIPE | POSTMAN | AXIOS | MASSIVE | REDUX | PYTHON | BOOTSTRAP | SPANISH</p>
