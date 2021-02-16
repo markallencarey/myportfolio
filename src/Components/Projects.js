@@ -30,7 +30,7 @@ const Projects = (props) => {
             src={ShowRandomizer}
             className='project-img'
           />
-          <h6 className='project-title'>Show Randomizer</h6>
+          <h1 className='project-title'>Show Randomizer</h1>
           <Button
             className='project-button'
             onClick={handleShowShow}
@@ -69,7 +69,7 @@ const Projects = (props) => {
             src={krissbethsWorld}
             className='project-img'
           />
-          <h6 className='project-title'>Krissbeth's World</h6>
+          <h1 className='project-title'>Krissbeth's World</h1>
           <Button
             className='project-button'
             onClick={handleShowKB}
@@ -108,7 +108,7 @@ const Projects = (props) => {
             src={covid19Dashboard}
             className='project-img'
           />
-          <h6 className='project-title'>The COVID-19 Dashboard</h6>
+          <h1 className='project-title'>The COVID-19 Dashboard</h1>
           <Button
             className='project-button'
             onClick={handleShowCOVID}

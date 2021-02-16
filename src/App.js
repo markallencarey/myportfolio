@@ -12,7 +12,7 @@ function App() {
       <Home />
       <Stack />
       <Projects />
-      {/* <Resume /> */}
+      <Resume />
       {/* <Contact /> */}
       </ReactPageScroller>
     </div>

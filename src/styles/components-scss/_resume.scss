@@ -1,45 +1,70 @@
 @import '../base-scss/variables';
 @import '../base-scss/mixins';
 
-// .Resume {
-//   @include page-layout();
-// }
+.Resume {
+  @include page-layout();
+}
 
-// .Carousel {
-//   height: 90%;
-//   width: 100%;
-//   padding: 0px 150px;
-//   display: flex;
-//   align-items: center;
-//   position: relative;
-//   // bottom: 2vh;
+.Carousel {
+  height: 92vh;
+  display: flex;
+  align-items: center;
 
-//   strong {
-//     color: $fieryRose;
-//   }
+  strong {
+    color: $fieryRose;
+  }
+}
 
-// }
+.Carousel-Item {
+  padding: 0px 30px;
 
-// .resume-img {
-//   width: 300px;
-//   height: 300px;
-//   object-fit: cover;
-//   margin: 10px;
-// }
+  h1 {
+    font-size: 22px;
+  }
 
-// .Carousel-Item {
-//   height: 100%;
-//   width: 100%;
+  h2 {
+    font-size: 18px;
+  }
 
-// }
+  h3 {
+    font-size: 16px;
+  }
 
-// .Carousel-Content {
-//   height: 100%;
-//   width: 100%;
-// }
+  h4 {
+    font-size: 15px;
+  }
 
-// .Carousel-Title {
-//   text-align: center;
-//   padding: 20px 0px;
-//   color: $azure;
-// }
+  p, h5, li {
+    font-size: 14px;
+  }
+
+  ul {
+    padding-left: 12px;
+  }
+
+  
+}
+
+.Carousel-Info {
+ padding-top: 0px;
+ padding-bottom: 0px;
+ margin-top: -10px;
+}
+
+.about-imgs {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.Carousel-Title {
+  text-align: center;
+  padding: 5px 0px;
+  color: $azure;
+}
