@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Container, Carousel, Image} from "react-bootstrap";
 import { IoIosArrowDown } from 'react-icons/io'
-import MyPic from '../assets/myPic.jpeg'
-import MyPic2 from '../assets/myPic2.jpeg'
-import MyPic3 from '../assets/myPic3.jpeg'
+import MyPic from '../assets/myPics/myPic-tiny.jpeg'
+import MyPic2 from '../assets/myPics/myPic2-tiny.jpeg'
+import MyPic3 from '../assets/myPics/myPic3-tiny.jpeg'
 
 const Resume = (props) => {
 

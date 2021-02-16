@@ -1,39 +1,46 @@
 @import '../base-scss/variables';
 @import '../base-scss/mixins';
 
-// .Projects {
-//   @include page-layout();
-//   color: $eerieBlack;
-// }
+.Projects {
+  height: 100vh;
+  width: 100vw;
+}
 
-// .Card {
-//   width: 25vw;
-//   height: 50vh;
+.project-list {
+  padding: 20px;
+  height: 92vh;
+}
 
-//   a {
-//     color: $azure;
-//   }
-// }
+.project {
+  background-color: $snow;
+  height: 29vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-bottom: 1vh;
+}
 
-// .card-deck {
-//   padding-top: 25vh;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
+.project-title {
+  margin: 0;
+  color: $eerieBlack;
+}
 
-// .card-img {
-//   padding: 0;
-//   margin: 0;
-//   border: none;
-// }
+.project-img {
+  margin: 10px;
+}
 
-// // .card-title {
-// // }
+.project-button {
+  color: $azure;
+  text-decoration: none;
+  padding: 0;
+  text-align: left;
+}
 
-// .card-text {
-//     color: $eerieBlack;
-//     opacity: 100%;
-//     font-size: 16px;
-//     margin-left: -15px;
-// }
+.project-modal {
+  height: 100vh;
+}
+
+.modal-img {
+  margin-bottom: 10px;
+}

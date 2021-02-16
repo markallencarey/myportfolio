@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 // import { ReactComponent as Logo } from '../assets/Logo.svg'
-import Logo from '../assets/Logo.svg'
+import Logo from '../assets/logos/Logo.svg'
 import { IoIosArrowDown } from 'react-icons/io'
 import Typewriter from 'typewriter-effect'
 

@@ -12,8 +12,8 @@ function App() {
       <Home />
       <Stack />
       <Projects />
-      <Resume />
-      <Contact />
+      {/* <Resume /> */}
+      {/* <Contact /> */}
       </ReactPageScroller>
     </div>
   );
