@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="App">
       <ReactPageScroller>
-      <Home />
-      <Stack />
-      <Projects />
-      <Resume />
-      <Contact />
+        <Home />
+        <Stack />
+        <Projects />
+        <Resume />
+        <Contact />
       </ReactPageScroller>
     </div>
   );

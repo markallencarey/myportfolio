@@ -121,7 +121,7 @@ const Contact = (props) => {
             )}
           <Button
             type="submit"
-            className="btn btn-primary"
+            className="form-btn-primary"
             onClick={handleShowAlert}
           >
             Submit

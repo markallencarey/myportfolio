@@ -37,12 +37,13 @@ const Projects = (props) => {
             variant='link'
           >Details</Button>
           <Modal
+            size="lg"
             className='project-modal'
             show={showShow}
             onHide={handleCloseShow}
           >
             <Modal.Header closeButton>
-              <Modal.Title>Show Randomizer</Modal.Title>
+              <Modal.Title className='project-modal-title'>Show Randomizer</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <Image
@@ -76,12 +77,13 @@ const Projects = (props) => {
             variant='link'
           >Details</Button>
           <Modal
+            size="lg"
             className='project-modal'
             show={showKB}
             onHide={handleCloseKB}
           >
             <Modal.Header closeButton>
-              <Modal.Title>Krissbeth's World</Modal.Title>
+              <Modal.Title className='project-modal-title'>Krissbeth's World</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <Image
@@ -115,12 +117,13 @@ const Projects = (props) => {
             variant='link'
           >Details</Button>
           <Modal
+            size="lg"
             className='project-modal'
             show={showCOVID}
             onHide={handleCloseCOVID}
           >
             <Modal.Header closeButton>
-              <Modal.Title>The COVID-19 Dashboard</Modal.Title>
+              <Modal.Title className='project-modal-title'>The COVID-19 Dashboard</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <Image
@@ -143,7 +146,7 @@ const Projects = (props) => {
       </Row>
 
       <Row fluid className='arrow-down-row'>
-        <IoIosArrowDown className='arrow-down' size='50px' />
+        <IoIosArrowDown className='arrow-down' size='6vh' />
       </Row>
     </Container>
   )

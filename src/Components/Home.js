@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
-// import { ReactComponent as Logo } from '../assets/Logo.svg'
 import Logo from '../assets/logos/Logo.svg'
 import { IoIosArrowDown } from 'react-icons/io'
 import Typewriter from 'typewriter-effect'
+import Stack from './Stack'
 
 const Home = (props) => {
-
-  // const [currentPage, setCurrentPage] = useState(0)
-
-  // function handlePageChange(number) {
-  //   setCurrentPage(number)
-  // }
 
   return (
     <Container fluid className='Home'>
@@ -21,12 +15,24 @@ const Home = (props) => {
         </Col>
       </Row>
 
-      {/* <Row className='hero-title'> */}
       <Row className='hero-title-row'>
-        <Container className='hero-title-container'>
-          <h1>Full Stack Web Developer.</h1>
-          <h1>Music Producer. Guitarist.</h1>
-        </Container>
+        <Typewriter
+          options={{
+            // loop: true,
+            wrapperClassName: 'typewriter-title',
+            cursorClassName: 'typewriter-cursor'
+          }}
+          onInit={typewriter => {
+            typewriter.typeString('Full Stack Web Developer.')
+              .pauseFor(1500)
+              .start()
+              .deleteAll()
+              .typeString('Music Producer. Guitarist.')
+              .pauseFor(1500)
+              .deleteAll()
+              .typeString('Full Stack Web Developer.<br>Music Producer. Guitarist.')
+          }}
+        />
       </Row>
 
       <Row fluid className='arrow-down-row'>

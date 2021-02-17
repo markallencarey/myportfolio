@@ -6,3 +6,14 @@
   font-family: $globalFontFamily;
   color: $snow;
 }
+
+.PageDots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 45%;
+  width: 20px;
+  padding: 0;
+}

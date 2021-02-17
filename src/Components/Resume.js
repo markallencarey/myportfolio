@@ -110,11 +110,11 @@ const Resume = (props) => {
             <br />
             <Container className='Carousel-Info'>
               <h2>LEHI, UTAH</h2>
-              <h2>Interests</h2>
+              <h2><strong>Interests</strong></h2>
               <p>MUSIC PRODUCTION | GUITAR | SONGWRITING | CELLO | BYU FOOTBALL | BYU BASKETBALL | LA DODGERS | COOKING | PHOTOGRAPHY | BOARD GAMES | STAR WARS | HARRY POTTER | MARVEL</p>
             </Container>
             <Container className='Carousel-Info'>
-              <h2>Skills</h2>
+              <h2><strong>Skills</strong></h2>
               <p>HTML5 | JAVASCRIPT | CSS3 | NODEJS | EXPRESS | SASS | REACT | POSTGRES | GIT | SQL | STRIPE | POSTMAN | AXIOS | MASSIVE | REDUX | PYTHON | BOOTSTRAP | SPANISH</p>
             </Container>
           </Carousel.Item>
@@ -356,7 +356,7 @@ const Resume = (props) => {
           </Carousel.Item>
         </Carousel>
       </Row>
-      <Row fluid className='arrow-down-row'>
+      <Row fluid className='arrow-down-row-resume'>
         <IoIosArrowDown className='arrow-down' size='6vh' />
       </Row>
     </Container >

@@ -40,8 +40,76 @@
 
 .project-modal {
   height: 100vh;
+
+  a {
+    color: $azure;
+  }
 }
 
 .modal-img {
   margin-bottom: 10px;
+}
+
+//desktop
+@media (min-width: 768px) {
+  .project {
+    height: 40vh;
+    width: 40vw;
+  }
+
+    .project-title {
+    font-size: 22px;
+  }
+}
+
+//tablet
+@media (min-width: 576px) and (max-width: 768px) {
+  .project {
+    height: 28vh;
+    width: 50vw;
+  }
+
+  .project-title {
+    font-size: 22px;
+  }
+
+  .project-button {
+    font-size: 18px;
+  }
+
+  .project-modal-title {
+    font-size: 32px;
+  }
+
+  .project-modal {
+    p, ul, a {
+      font-size: 22px;
+    }
+  }
+}
+
+//phone
+@media (max-width: 576px) {
+  .project {
+    height: 29vh;
+    width: 70vw;
+  }
+
+  .project-title {
+    font-size: 16px;
+  }
+
+  .project-button {
+    font-size: 14px;
+  }
+
+  .project-modal-title {
+    font-size: 20px;
+  }
+
+  .project-modal {
+    p, ul, a {
+      font-size: 14px;
+    }
+  }
 }
