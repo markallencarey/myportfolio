@@ -18,3 +18,47 @@
     color: $azure;
   }
 }
+
+//desktop
+@media (min-width: 768px) {
+  .Contact {
+    h1 {
+      font-size: 54px;
+    }
+
+    h3 {
+      font-size: 38px;
+    }
+    
+    .form-group {
+      font-size: 32px;
+    }
+    
+    .form-btn-primary {
+      font-size: 26px;
+    }
+
+    ::placeholder {
+      font-size: 22px;
+    }
+  }
+}
+
+//tablet
+@media (min-width: 576px) and (max-width: 768px) {
+  
+}
+
+//phone
+@media (max-width: 320px) {
+  .Contact {
+    h1 {
+      font-size: 26px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+  
+}

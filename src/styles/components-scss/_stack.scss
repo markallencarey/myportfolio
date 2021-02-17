@@ -2,38 +2,94 @@
 @import '../base-scss/mixins';
 
 .Stack {
-  width: 100vw;
+  @include page-layout();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stack-list {
+  height: 92vh;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.stack-div {
-  margin: 5px;
-  min-width: 120px;
+.stack-Container {
+  height: 140px;
+  width: 70px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
-  border-radius: 10px;
-}
-
-.stack-title {
-  padding: 0;
-  margin: 0;
-  color: $snow;
-  opacity: 50%;
-  font-size: 14px;
+  justify-content: space-evenly;
+  padding: 5px;
 }
 
 .stack-img {
-  height: 70px;
-  max-width: 100px;
-  padding-bottom: 20px;
+  width: 60px;
+  height: 60px;
 }
 
-.gitHub {
-  color: $snow;
-  padding-bottom: 20px;
+.stack-title {
+  font-size: 12px;
+  opacity: 50%;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+//desktop
+@media (min-width: 768px) {
+  .stack-Container {
+    height: 170px;
+    width: 170px;
+  }
+  
+  .stack-img {
+    width: 100px;
+    height: 110px;
+  }
+
+  .stack-title {
+    font-size: 22px;
+  }
+}
+
+//tablet
+@media (min-width: 576px) and (max-width: 768px) {
+  .stack-Container {
+    height: 200px;
+    width: 150px;
+  }
+
+  .stack-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .stack-title {
+    font-size: 20px;
+  }
+}
+
+//phone
+@media (max-width: 576px) {
+  .stack-Container {
+    height: 100px;
+    width: 70px;
+  }
+
+  .stack-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .stack-title {
+    font-size: 12px;
+  }
 }

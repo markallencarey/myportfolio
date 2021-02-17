@@ -1,32 +1,44 @@
-import React, { useEffect, useState } from 'react'
-import { Container } from 'react-bootstrap'
-import { ReactComponent as Logo } from '../assets/Logo-3.svg'
+import React from 'react'
+import { Container, Row, Col, Image } from 'react-bootstrap'
+import Logo from '../assets/logos/Logo.svg'
 import { IoIosArrowDown } from 'react-icons/io'
+import Typewriter from 'typewriter-effect'
 import Stack from './Stack'
-// import Typewriter from 'typewriter-effect'
 
 const Home = (props) => {
 
-  // const [currentPage, setCurrentPage] = useState(0)
-
-  // function handlePageChange(number) {
-  //   setCurrentPage(number)
-  // }
-
   return (
     <Container fluid className='Home'>
-        <div className="hero">
-          <Logo className='hero-logo' />
-          <div className='hero-title'>
-            <h1>Full Stack Web Developer.</h1>
-            <div className='music-hero-div'>
-              <h1 className='music-hero-producer'>Music Producer.</h1>
-              <h1 className='music-hero-guitarist'>Guitarist.</h1>
-            </div>
-          </div>
-        </div>
-        <Stack />
-        <IoIosArrowDown className='arrow-down' size='50px' />
+      <Row>
+        <Col>
+          <Image src={Logo} fluid className='hero-logo' />
+        </Col>
+      </Row>
+
+      <Row className='hero-title-row'>
+        <Typewriter
+          options={{
+            // loop: true,
+            wrapperClassName: 'typewriter-title',
+            cursorClassName: 'typewriter-cursor'
+          }}
+          onInit={typewriter => {
+            typewriter.typeString('Full Stack Web Developer.')
+              .pauseFor(1500)
+              .start()
+              .deleteAll()
+              .typeString('Music Producer. Guitarist.')
+              .pauseFor(1500)
+              .deleteAll()
+              .typeString('Full Stack Web Developer.<br>Music Producer. Guitarist.')
+          }}
+        />
+      </Row>
+
+      <Row fluid className='arrow-down-row'>
+        <IoIosArrowDown className='arrow-down' size='6vh' />
+      </Row>
+
     </Container>
   )
 }

@@ -2,38 +2,114 @@
 @import '../base-scss/mixins';
 
 .Projects {
-  @include page-layout();
-  color: $eerieBlack;
+  height: 100vh;
+  width: 100vw;
 }
 
-.Card {
-  width: 25vw;
-  height: 50vh;
+.project-list {
+  padding: 20px;
+  height: 92vh;
+}
+
+.project {
+  background-color: $snow;
+  height: 29vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-bottom: 1vh;
+}
+
+.project-title {
+  margin: 0;
+  color: $eerieBlack;
+  font-size: 16px;
+}
+
+.project-img {
+  margin: 10px;
+}
+
+.project-button {
+  color: $azure;
+  text-decoration: none;
+  padding: 0;
+  text-align: left;
+}
+
+.project-modal {
+  height: 100vh;
 
   a {
     color: $azure;
   }
 }
 
-.card-deck {
-  padding-top: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.modal-img {
+  margin-bottom: 10px;
 }
 
-.card-img {
-  padding: 0;
-  margin: 0;
-  border: none;
+//desktop
+@media (min-width: 768px) {
+  .project {
+    height: 40vh;
+    width: 40vw;
+  }
+
+    .project-title {
+    font-size: 22px;
+  }
 }
 
-// .card-title {
-// }
+//tablet
+@media (min-width: 576px) and (max-width: 768px) {
+  .project {
+    height: 28vh;
+    width: 50vw;
+  }
 
-.card-text {
-    color: $eerieBlack;
-    opacity: 100%;
+  .project-title {
+    font-size: 22px;
+  }
+
+  .project-button {
+    font-size: 18px;
+  }
+
+  .project-modal-title {
+    font-size: 32px;
+  }
+
+  .project-modal {
+    p, ul, a {
+      font-size: 22px;
+    }
+  }
+}
+
+//phone
+@media (max-width: 576px) {
+  .project {
+    height: 29vh;
+    width: 70vw;
+  }
+
+  .project-title {
     font-size: 16px;
-    margin-left: -15px;
+  }
+
+  .project-button {
+    font-size: 14px;
+  }
+
+  .project-modal-title {
+    font-size: 20px;
+  }
+
+  .project-modal {
+    p, ul, a {
+      font-size: 14px;
+    }
+  }
 }

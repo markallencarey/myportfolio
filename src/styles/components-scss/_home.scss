@@ -3,30 +3,30 @@
 
 .Home {
   @include page-layout();
-  color: $snow;
 }
 
 .hero-logo {
-  margin-top: 4vh;
+  height: 46vh;
 }
 
-.hero-title {
-  color: $snow;
-  font-size: 32px;
+.hero-title-row {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 46vh;
+  text-align: center;
+  width: 90%;
 }
 
-.music-hero-div {
-  display: flex;
-}
+// .hero-title-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   text-align: center;
+// }
 
-.music-hero-guitarist {
-  margin-left: 10px;
-}
-
-.arrow-down {
+.arrow-down-row {
   @include arrow-down();
 }
 
@@ -35,15 +35,45 @@
   to {width: 100%}
 }
 
-// .typewriter-title {
-//   color: $snow;
-//   font-size: 40px;
-//   text-align: center;
-// }
+.typewriter-title {
+  color: $snow;
+  font-size: 38px;
+  text-align: center;
+}
 
-// .typewriter-cursor {
-//   color: $snow;
-//   font-size: 40px;
-//   opacity: 50%;
-//   animation: blinkingCursor 5s;
-// }
+.typewriter-cursor {
+  color: $snow;
+  font-size: 38px;
+  opacity: 50%;
+  animation: blinkingCursor 1s;
+  animation-iteration-count: infinite;
+}
+
+//desktop
+@media (min-width: 768px) {
+  .typewriter-cursor, .typewriter-title {
+    font-size: 62px;
+  }
+}
+
+//tablet
+@media (min-width: 576px) and (max-width: 768px) {
+
+}
+
+//phone
+@media (max-width: 576px) {
+  .typewriter-cursor, .typewriter-title {
+    font-size: 36px;
+  }
+}
+
+@keyframes blinkingCursor {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 50%;
+  }
+}

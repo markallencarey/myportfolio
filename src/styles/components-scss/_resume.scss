@@ -6,40 +6,228 @@
 }
 
 .Carousel {
-  height: 90%;
-  width: 100%;
-  padding: 0px 150px;
+  height: 97vh;
   display: flex;
   align-items: center;
-  position: relative;
-  // bottom: 2vh;
+  justify-content: center;
 
   strong {
     color: $fieryRose;
   }
-
-}
-
-.resume-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  margin: 10px;
 }
 
 .Carousel-Item {
-  height: 100%;
-  width: 100%;
+  padding: 0px 30px;
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  p, h5, li {
+    font-size: 14px;
+  }
+
+  ul {
+    padding-left: 12px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
 
 }
 
-.Carousel-Content {
-  height: 100%;
-  width: 100%;
+.Carousel-Info {
+ padding-top: 5px;
+ padding-bottom: 5px;
+ margin: 0;
+}
+
+
+.about-imgs {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.resume-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.click-photo {
+  display: flex;
+  justify-content: flex-end;
+  color: $snow;
+  opacity: 40%;
 }
 
 .Carousel-Title {
   text-align: center;
-  padding: 20px 0px;
+  padding: 5px 0px;
   color: $azure;
+}
+
+//desktop
+@media (min-width: 768px) {
+  .Carousel {
+    height: 95vh;
+  }
+  
+  .click-photo {
+    display: none;
+  }
+
+  .resume-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .Carousel-Item {
+    padding: 0px 120px;
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    h2 {
+      font-size: 26px;
+    }
+  
+    h3 {
+      font-size: 24px;
+    }
+  
+    h4 {
+      font-size: 23px;
+    }
+  
+    p, h5, li {
+      font-size: 24px;
+    }
+  
+    ul {
+      padding-left: 20px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+
+  }
+}
+
+//tablet
+@media (min-width: 576px) and (max-width: 768px) {
+  .Carousel {
+    height: 95vh;
+  }
+
+  .Carousel-Info {
+    padding: 0 35px;
+  }
+
+  .resume-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .click-photo {
+    display: flex;
+  }
+
+  .Carousel-Item {
+    padding: 0px 50px;
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    h2 {
+      font-size: 26px;
+    }
+  
+    h3 {
+      font-size: 24px;
+    }
+  
+    h4 {
+      font-size: 23px;
+    }
+  
+    p, h5, li {
+      font-size: 24px;
+    }
+  
+    ul {
+      padding-left: 20px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+  }
+}
+
+//phone
+@media (max-width: 320px) {
+
+  .resume-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Carousel-Item {
+    padding: 0px 20px;
+  
+    h1 {
+      font-size: 18px;
+    }
+  
+    h2 {
+      font-size: 14px;
+    }
+  
+    h3 {
+      font-size: 11px;
+    }
+  
+    h4 {
+      font-size: 10.5px;
+    }
+  
+    p, h5, li {
+      font-size: 11px;
+    }
+  
+    ul {
+      padding-left: 9px;
+    }
+
+    h6 {
+      font-size: 10.5px;
+    }
+  }
+
+  .Carousel-Info {
+    padding: 0 25px;
+  }
+}
+
+.arrow-down-row-resume {
+  @include arrow-down();
+  position: absolute;
+  bottom: 0;
 }
