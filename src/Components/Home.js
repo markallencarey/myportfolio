@@ -3,7 +3,6 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 import Logo from '../assets/logos/Logo.svg'
 import { IoIosArrowDown } from 'react-icons/io'
 import Typewriter from 'typewriter-effect'
-import Stack from './Stack'
 
 const Home = (props) => {
 
