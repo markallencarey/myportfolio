@@ -127,7 +127,7 @@ const Stack = (props) => {
       </Row>
 
       <Row fluid className='arrow-down-row'>
-        <IoIosArrowDown className='arrow-down' size='6vh' />
+        <IoIosArrowDown className='arrow-down' size='6vh' color='#fffafa' />
       </Row>
 
     </Container>

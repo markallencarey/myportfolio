@@ -13,10 +13,10 @@ const Resume = (props) => {
 
   const handleClose1 = () => setShow1(false)
   const handleShow1 = () => setShow1(true)
-  
+
   const handleClose2 = () => setShow2(false)
   const handleShow2 = () => setShow2(true)
-  
+
   const handleClose3 = () => setShow3(false)
   const handleShow3 = () => setShow3(true)
 
@@ -357,7 +357,7 @@ const Resume = (props) => {
         </Carousel>
       </Row>
       <Row fluid className='arrow-down-row-resume'>
-        <IoIosArrowDown className='arrow-down' size='6vh' />
+        <IoIosArrowDown className='arrow-down' size='6vh' color='#fffafa' />
       </Row>
     </Container >
   )

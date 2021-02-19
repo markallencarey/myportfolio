@@ -26,16 +26,16 @@ const Home = (props) => {
               .pauseFor(5000)
               .start()
               .deleteAll()
-              // .typeString('Music Producer. Guitarist.')
-              // .pauseFor(1500)
-              // .deleteAll()
-              // .typeString('Full Stack Web Developer.<br>Music Producer. Guitarist.')
+            // .typeString('Music Producer. Guitarist.')
+            // .pauseFor(1500)
+            // .deleteAll()
+            // .typeString('Full Stack Web Developer.<br>Music Producer. Guitarist.')
           }}
         />
       </Row>
 
       <Row fluid className='arrow-down-row'>
-        <IoIosArrowDown className='arrow-down' size='6vh' />
+        <IoIosArrowDown className='arrow-down' size='6vh' color='#fffafa' />
       </Row>
 
     </Container>
