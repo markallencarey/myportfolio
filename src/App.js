@@ -8,13 +8,13 @@ import ReactPageScroller from 'react-page-scroller'
 function App() {
   return (
     <div className="App">
-      <ReactPageScroller>
+      {/* <ReactPageScroller> */}
         <Home />
         <Stack />
         <Projects />
         <Resume />
         <Contact />
-      </ReactPageScroller>
+      {/* </ReactPageScroller> */}
     </div>
   );
 }
