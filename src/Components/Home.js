@@ -8,7 +8,7 @@ import Div100vh from 'react-div-100vh'
 const Home = (props) => {
 
   return (
-    <Div100vh>
+    // <Div100vh>
       <Container fluid className='Home'>
         <Row >
           <Col sm={12} className='hero-logo-col'>
@@ -30,11 +30,11 @@ const Home = (props) => {
             }}
           />
         </Row>
-        <Row fluid className='arrow-down-row'>
+        {/* <Row fluid className='arrow-down-row'>
           <IoIosArrowDown className='arrow-down' size='6vh' color='#fffafa' />
-        </Row>
+        </Row> */}
       </Container>
-    </Div100vh>
+    // </Div100vh>
   )
 }
 

@@ -22,116 +22,116 @@ import Div100vh from 'react-div-100vh'
 const Stack = (props) => {
 
   return (
-    <Div100vh>
-      <Container className='Stack'>
-        <Row fluid className='stack-list'>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={HTML_Logo} />
-            <p className='stack-title'>HTML5</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={JS_Logo} />
-            <p className='stack-title'>JAVASCRIPT</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={CSS_Logo} />
-            <p className='stack-title'>CSS3</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={Node_Logo} />
-            <p className='stack-title'>NODEJS</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={Express_Logo} />
-            <p className='stack-title'>EXPRESSJS</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={Sass_Logo} />
-            <p className='stack-title'>SASS</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={React_Logo} />
-            <p className='stack-title'>REACT</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={Postgres_Logo} />
-            <p className='stack-title'>POSTGRES</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={Git_Logo} />
-            <p className='stack-title'>GIT</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <AiFillGithub
-              className='stack-img'
-              size='80px'
-            />
-            <p className='stack-title'>GITHUB</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={Stripe_Logo} />
-            <p className='stack-title'>STRIPE</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={Postman_Logo} />
-            <p className='stack-title'>POSTMAN</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={Redux_Logo} />
-            <p className='stack-title'>REDUX</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={Python_Logo} />
-            <p className='stack-title'>PYTHON</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <Image className='stack-img' src={Bootstrap_Logo} />
-            <p className='stack-title'>BOOTSTRAP</p>
-          </Container>
-          <Container
-            className='stack-Container'
-          >
-            <p className='stack-title'><strong>OTHER:</strong></p>
-            <p className='stack-title'>AXIOS</p>
-            <p className='stack-title'>MASSIVE</p>
-            <p className='stack-title'>SPANISH</p>
-          </Container>
-        </Row>
-        <Row fluid className='arrow-down-row'>
+    // <Div100vh>
+    <Container fluid className='Stack'>
+      <Row className='stack-list'>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={HTML_Logo} />
+          <p className='stack-title'>HTML5</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={JS_Logo} />
+          <p className='stack-title'>JAVASCRIPT</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={CSS_Logo} />
+          <p className='stack-title'>CSS3</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={Node_Logo} />
+          <p className='stack-title'>NODEJS</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={Express_Logo} />
+          <p className='stack-title'>EXPRESSJS</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={Sass_Logo} />
+          <p className='stack-title'>SASS</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={React_Logo} />
+          <p className='stack-title'>REACT</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={Postgres_Logo} />
+          <p className='stack-title'>POSTGRES</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={Git_Logo} />
+          <p className='stack-title'>GIT</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <AiFillGithub
+            className='stack-img'
+            size='80px'
+          />
+          <p className='stack-title'>GITHUB</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={Stripe_Logo} />
+          <p className='stack-title'>STRIPE</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={Postman_Logo} />
+          <p className='stack-title'>POSTMAN</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={Redux_Logo} />
+          <p className='stack-title'>REDUX</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={Python_Logo} />
+          <p className='stack-title'>PYTHON</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <Image className='stack-img' src={Bootstrap_Logo} />
+          <p className='stack-title'>BOOTSTRAP</p>
+        </Container>
+        <Container
+          className='stack-Container'
+        >
+          <p className='stack-title'><strong>OTHER:</strong></p>
+          <p className='stack-title'>AXIOS</p>
+          <p className='stack-title'>MASSIVE</p>
+          <p className='stack-title'>SPANISH</p>
+        </Container>
+      </Row>
+      {/* <Row fluid className='arrow-down-row'>
           <IoIosArrowDown className='arrow-down' size='6vh' color='#fffafa' />
-        </Row>
-      </Container>
-    </Div100vh>
+        </Row> */}
+    </Container>
+    // </Div100vh>
   )
 }
 

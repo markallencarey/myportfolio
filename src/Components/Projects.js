@@ -22,22 +22,24 @@ const Projects = (props) => {
   const handleShowCOVID = () => setShowCOVID(true)
 
   return (
-    <Div100vh>
+    // <Div100vh>
       <Container fluid className='Projects'>
         <Row className='project-list'>
           <Container className='project'>
-            <Image
-              fluid
-              rounded
-              src={ShowRandomizer}
-              className='project-img'
-            />
-            <h1 className='project-title'>Show Randomizer</h1>
             <Button
               className='project-button'
               onClick={handleShowShow}
               variant='link'
-            >Details</Button>
+            >
+              <Image
+                fluid
+                rounded
+                src={ShowRandomizer}
+                className='project-img'
+              />
+              <h1 className='project-title'>Show Randomizer</h1>
+              <p>Details</p>
+            </Button>
             <Modal
               size="lg"
               className='project-modal'
@@ -66,18 +68,20 @@ const Projects = (props) => {
             </Modal>
           </Container>
           <Container className='project'>
-            <Image
-              fluid
-              rounded
-              src={krissbethsWorld}
-              className='project-img'
-            />
-            <h1 className='project-title'>Krissbeth's World</h1>
             <Button
               className='project-button'
               onClick={handleShowKB}
               variant='link'
-            >Details</Button>
+            >
+              <Image
+                fluid
+                rounded
+                src={krissbethsWorld}
+                className='project-img'
+              />
+              <h1 className='project-title'>Krissbeth's World</h1>
+              <p>Details</p>
+            </Button>
             <Modal
               size="lg"
               className='project-modal'
@@ -106,18 +110,20 @@ const Projects = (props) => {
             </Modal>
           </Container>
           <Container className='project'>
-            <Image
-              fluid
-              rounded
-              src={covid19Dashboard}
-              className='project-img'
-            />
-            <h1 className='project-title'>The COVID-19 Dashboard</h1>
             <Button
               className='project-button'
               onClick={handleShowCOVID}
               variant='link'
-            >Details</Button>
+            >
+              <Image
+                fluid
+                rounded
+                src={covid19Dashboard}
+                className='project-img'
+              />
+              <h1 className='project-title'>The COVID-19 Dashboard</h1>
+              <p>Details</p>
+            </Button>
             <Modal
               size="lg"
               className='project-modal'
@@ -146,11 +152,11 @@ const Projects = (props) => {
             </Modal>
           </Container>
         </Row>
-        <Row fluid className='arrow-down-row'>
+        {/* <Row fluid className='arrow-down-row'>
           <IoIosArrowDown className='arrow-down' size='6vh' color='#fffafa' />
-        </Row>
+        </Row> */}
       </Container>
-    </Div100vh>
+    // </Div100vh>
   )
 }
 

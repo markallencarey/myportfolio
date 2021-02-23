@@ -14,7 +14,7 @@ function App() {
         <Stack />
         <Projects />
         <Resume />
-        <Contact />
+        {/* <Contact /> */}
       {/* </ReactPageScroller> */}
     </div>
   );

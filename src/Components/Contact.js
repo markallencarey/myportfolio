@@ -50,7 +50,7 @@ const Contact = (props) => {
   const handleShowAlert = () => setShowAlert(true)
 
   return (
-    <Div100vh>
+    // <Div100vh>
       <Container fluid className='Contact'>
         <h1>Contact Me:</h1>
         <h3><a href="tel:+18013603072">801-360-3072</a></h3>
@@ -131,7 +131,7 @@ const Contact = (props) => {
           </Form>
         </Container>
       </Container>
-    </Div100vh>
+    // </Div100vh>
   )
 }
 
