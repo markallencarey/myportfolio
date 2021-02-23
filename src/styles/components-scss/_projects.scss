@@ -1,5 +1,5 @@
-@import '../base-scss/variables';
-@import '../base-scss/mixins';
+@import "../base-scss/variables";
+@import "../base-scss/mixins";
 
 .Projects {
   @include page-layout();
@@ -7,8 +7,6 @@
 
 .project-list {
   padding: 20px;
-//   height: 92%;
-//   max-height: 92%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -16,13 +14,9 @@
 
 .project {
   background-color: $snow;
-  // display: flex;
-  // flex-direction: column;
   border-radius: 4px;
   margin: 10px;
-  // margin-bottom: 10px;
   width: 360px;
-  // height: auto;
 }
 
 .project-title {
@@ -38,7 +32,6 @@
 
 .project-button {
   text-decoration: none;
-  // padding: 0;
   text-align: left;
 
   p {
@@ -61,67 +54,3 @@
 .modal-img {
   margin-bottom: 10px;
 }
-
-// //desktop
-// @media (min-width: 768px) {
-//   .project {
-//     // height: 38%;
-//     // width: 45%;
-//   }
-
-//     .project-title {
-//     font-size: 22px;
-//   }
-// }
-
-// //tablet
-// @media (min-width: 576px) and (max-width: 768px) {
-//   .project {
-//     // height: 28%;
-//     // width: 50%;
-//   }
-
-//   .project-title {
-//     font-size: 22px;
-//   }
-
-//   .project-button {
-//     font-size: 18px;
-//   }
-
-//   .project-modal-title {
-//     font-size: 32px;
-//   }
-
-//   .project-modal {
-//     p, ul, a {
-//       font-size: 22px;
-//     }
-//   }
-// }
-
-// //phone
-// @media (max-width: 576px) {
-//   .project {
-//     // height: 29%;
-//     // width: 70%;
-//   }
-
-//   .project-title {
-//     font-size: 16px;
-//   }
-
-//   .project-button {
-//     font-size: 14px;
-//   }
-
-//   .project-modal-title {
-//     font-size: 20px;
-//   }
-
-//   .project-modal {
-//     p, ul, a {
-//       font-size: 14px;
-//     }
-//   }
-// }

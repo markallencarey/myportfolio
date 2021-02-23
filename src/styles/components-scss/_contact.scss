@@ -1,10 +1,9 @@
-@import '../base-scss/variables';
-@import '../base-scss/mixins';
+@import "../base-scss/variables";
+@import "../base-scss/mixins";
 
 .Contact {
   @include page-layout();
   padding-bottom: 40px;
-//   justify-content: center;
 
   h1 {
     color: $azure;
@@ -23,52 +22,3 @@
 .form-btn-primary {
   margin-top: 10px;
 }
-
-.form-control {
-  // height: 50px;
-  // font-size: 22px;
-}
-
-// //desktop
-// @media (min-width: 768px) {
-//   .Contact {
-//     h1 {
-//       font-size: 54px;
-//     }
-
-//     h3 {
-//       font-size: 38px;
-//     }
-    
-//     .form-group {
-//       font-size: 32px;
-//     }
-    
-//     .form-btn-primary {
-//       font-size: 26px;
-//     }
-
-//     ::placeholder {
-//       font-size: 22px;
-//     }
-//   }
-// }
-
-// //tablet
-// @media (min-width: 576px) and (max-width: 768px) {
-  
-// }
-
-// //phone
-// @media (max-width: 320px) {
-//   .Contact {
-//     h1 {
-//       font-size: 26px;
-//     }
-
-//     h3 {
-//       font-size: 24px;
-//     }
-//   }
-  
-// }

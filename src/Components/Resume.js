@@ -24,7 +24,6 @@ const Resume = (props) => {
   const interval = (1000 * 1000)
 
   return (
-    // <Div100vh>
     <Container fluid className='Resume'>
       <Tabs
         className='Tabs'
@@ -302,11 +301,7 @@ const Resume = (props) => {
           </Container>
         </Tab>
       </Tabs>
-      {/* <Row fluid className='arrow-down-row-resume'>
-          <IoIosArrowDown className='arrow-down' size='6vh' color='#fffafa' />
-        </Row> */}
     </Container >
-    // </Div100vh>
   )
 }
 

@@ -22,7 +22,6 @@ import Div100vh from 'react-div-100vh'
 const Stack = (props) => {
 
   return (
-    // <Div100vh>
     <Container fluid className='Stack'>
       <Row className='stack-list'>
         <Container
@@ -127,11 +126,7 @@ const Stack = (props) => {
           <p className='stack-title'>SPANISH</p>
         </Container>
       </Row>
-      {/* <Row fluid className='arrow-down-row'>
-          <IoIosArrowDown className='arrow-down' size='6vh' color='#fffafa' />
-        </Row> */}
     </Container>
-    // </Div100vh>
   )
 }
 

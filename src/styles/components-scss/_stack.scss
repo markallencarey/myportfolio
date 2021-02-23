@@ -1,9 +1,8 @@
-@import '../base-scss/variables';
-@import '../base-scss/mixins';
+@import "../base-scss/variables";
+@import "../base-scss/mixins";
 
 .Stack {
   @include page-layout();
-  // flex-wrap: wrap;
 }
 
 .stack-list {
@@ -17,14 +16,10 @@
 }
 
 .stack-Container {
-  // height: 150px;
   width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: space-evenly;
-// background-color: blue;
-//   // padding: 5px;
 }
 
 .stack-img {
@@ -33,63 +28,6 @@
 }
 
 .stack-title {
-  // font-size: 12px;
   opacity: 0.5;
   margin-top: 5px;
 }
-
-// p {
-//   padding: 0;
-//   margin: 0;
-// }
-
-// //desktop
-// @media (min-width: 768px) {
-//   .stack-Container {
-//     height: 170px;
-//     width: 170px;
-//   }
-  
-//   .stack-img {
-//     width: 100px;
-//     height: 110px;
-//   }
-
-//   .stack-title {
-//     font-size: 22px;
-//   }
-// }
-
-// //tablet
-// @media (min-width: 576px) and (max-width: 768px) {
-//   .stack-Container {
-//     height: 200px;
-//     width: 150px;
-//   }
-
-//   .stack-img {
-//     width: 100px;
-//     height: 100px;
-//   }
-
-//   .stack-title {
-//     font-size: 20px;
-//   }
-// }
-
-// //phone
-// @media (max-width: 576px) {
-//   .stack-Container {
-//     height: 100px;
-//     width: 70px;
-//   }
-
-//   .stack-img {
-//     width: 50px;
-//     height: 50px;
-//   }
-
-//   .stack-title {
-//     font-size: 12px;
-//   }
-// }

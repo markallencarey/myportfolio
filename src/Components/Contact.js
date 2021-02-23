@@ -50,88 +50,86 @@ const Contact = (props) => {
   const handleShowAlert = () => setShowAlert(true)
 
   return (
-    // <Div100vh>
-      <Container fluid className='Contact'>
-        <h1>CONTACT ME:</h1>
-        <h3><a href="tel:+18013603072">801-360-3072</a></h3>
-        <h3><a
-          href="https://www.linkedin.com/in/markallencarey"
-          target='_blank'
-          rel="noreferrer"
-        >LinkedIn</a></h3>
-        <h3><a
-          href="https://github.com/markallencarey"
-          target='_blank'
-          rel="noreferrer"
-        >GitHub</a></h3>
-        <Container>
-          <Form onSubmit={handleSubmit}>
-            <Form.Group className="form-group">
-              <Form.Label htmlFor="email" required="required">
-                Email address
+    <Container fluid className='Contact'>
+      <h1>CONTACT ME:</h1>
+      <h3><a href="tel:+18013603072">801-360-3072</a></h3>
+      <h3><a
+        href="https://www.linkedin.com/in/markallencarey"
+        target='_blank'
+        rel="noreferrer"
+      >LinkedIn</a></h3>
+      <h3><a
+        href="https://github.com/markallencarey"
+        target='_blank'
+        rel="noreferrer"
+      >GitHub</a></h3>
+      <Container>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group className="form-group">
+            <Form.Label htmlFor="email" required="required">
+              Email address
             </Form.Label>
-              <Form.Control
-                type="email"
-                className="form-control"
-                id="email"
-                placeholder="Enter email"
-                name="email"
-                value={query.email}
-                onChange={handleChange()}
-              />
-            </Form.Group>
-            <Form.Group className="form-group">
-              <Form.Label htmlFor="name">Name</Form.Label>
-              <Form.Control
-                type="text"
-                className="form-control"
-                id="name"
-                placeholder="Enter your name"
-                required="required"
-                name="name"
-                value={query.name}
-                onChange={handleChange()}
-              />
-            </Form.Group>
-            <Form.Group className="form-group">
-              <Form.Label htmlFor="message">Message</Form.Label>
-              <Form.Control
-                as='textarea'
-                rows={5}
-                type="text"
-                className="form-control"
-                id="name"
-                placeholder="Enter your message"
-                required="required"
-                name="message"
-                value={query.message}
-                onChange={handleChange()}
-              />
-            </Form.Group>
-            {formStatus ? (
-              <Modal
-                show={showAlert}
-                onHide={handleCloseAlert}
-              >
-                <Modal.Header closeButton />
-                <Modal.Body>
-                  <p>Your message has been sent.</p>
-                </Modal.Body>
-              </Modal>
-            ) : (
-                ""
-              )}
-            <Button
-              type="submit"
-              className="form-btn-primary"
-              onClick={handleShowAlert}
+            <Form.Control
+              type="email"
+              className="form-control"
+              id="email"
+              placeholder="Enter email"
+              name="email"
+              value={query.email}
+              onChange={handleChange()}
+            />
+          </Form.Group>
+          <Form.Group className="form-group">
+            <Form.Label htmlFor="name">Name</Form.Label>
+            <Form.Control
+              type="text"
+              className="form-control"
+              id="name"
+              placeholder="Enter your name"
+              required="required"
+              name="name"
+              value={query.name}
+              onChange={handleChange()}
+            />
+          </Form.Group>
+          <Form.Group className="form-group">
+            <Form.Label htmlFor="message">Message</Form.Label>
+            <Form.Control
+              as='textarea'
+              rows={5}
+              type="text"
+              className="form-control"
+              id="name"
+              placeholder="Enter your message"
+              required="required"
+              name="message"
+              value={query.message}
+              onChange={handleChange()}
+            />
+          </Form.Group>
+          {formStatus ? (
+            <Modal
+              show={showAlert}
+              onHide={handleCloseAlert}
             >
-              Submit
+              <Modal.Header closeButton />
+              <Modal.Body>
+                <p>Your message has been sent.</p>
+              </Modal.Body>
+            </Modal>
+          ) : (
+              ""
+            )}
+          <Button
+            type="submit"
+            className="form-btn-primary"
+            onClick={handleShowAlert}
+          >
+            Submit
             </Button>
-          </Form>
-        </Container>
+        </Form>
       </Container>
-    // </Div100vh>
+    </Container>
   )
 }
 

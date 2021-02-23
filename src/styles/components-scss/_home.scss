@@ -1,5 +1,5 @@
-@import '../base-scss/variables';
-@import '../base-scss/mixins';
+@import "../base-scss/variables";
+@import "../base-scss/mixins";
 
 .Home {
   @include page-layout();
@@ -9,22 +9,18 @@
   min-height: 240px;
   display: flex;
   flex-direction: column;
-  // justify-content: flex-start;
   align-items: center;
   text-align: center;
   width: 90%;
-//   height: 46%;
-//   padding-top: 15%;
-}
-
-.arrow-down-row {
-  // background-color: red;
-//   @include arrow-down();
 }
 
 @keyframes typing {
-  from {width: 0}
-  to {width: 100%}
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .typewriter-title {
@@ -39,23 +35,12 @@
   animation-iteration-count: infinite;
 }
 
-// //desktop
+//desktop
 @media (min-width: 768px) {
-  .typewriter-cursor, .typewriter-title {
+  .typewriter-cursor,
+  .typewriter-title {
     font-size: 58px;
   }
-}
-
-// //tablet
-// @media (min-width: 576px) and (max-width: 768px) {
-
-// }
-
-// //phone
-@media (max-width: 576px) {
-//   .typewriter-cursor, .typewriter-title {
-//     font-size: 36px;
-//   }
 }
 
 @keyframes blinkingCursor {
