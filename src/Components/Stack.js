@@ -17,12 +17,14 @@ import Sass_Logo from '../assets/stack-logos/sass-1.svg'
 import Stripe_Logo from '../assets/stack-logos/stripe-4.svg'
 import { AiFillGithub } from 'react-icons/ai'
 import { IoIosArrowDown } from 'react-icons/io'
+import Div100vh from 'react-div-100vh'
 
 const Stack = (props) => {
 
   return (
-    <Container className='Stack'>
-      <Row fluid className='stack-list'>
+    // <Div100vh>
+    <Container fluid className='Stack'>
+      <Row className='stack-list'>
         <Container
           className='stack-Container'
         >
@@ -125,12 +127,11 @@ const Stack = (props) => {
           <p className='stack-title'>SPANISH</p>
         </Container>
       </Row>
-
-      <Row fluid className='arrow-down-row'>
-        <IoIosArrowDown className='arrow-down' size='6vh' color='#fffafa' />
-      </Row>
-
+      {/* <Row fluid className='arrow-down-row'>
+          <IoIosArrowDown className='arrow-down' size='6vh' color='#fffafa' />
+        </Row> */}
     </Container>
+    // </Div100vh>
   )
 }
 

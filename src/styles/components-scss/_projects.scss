@@ -2,114 +2,126 @@
 @import '../base-scss/mixins';
 
 .Projects {
-  height: 100vh;
-  max-width: 100vw;
+  @include page-layout();
 }
 
 .project-list {
   padding: 20px;
-  height: 92vh;
+//   height: 92%;
+//   max-height: 92%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .project {
   background-color: $snow;
-  height: 29vh;
-  width: 70vw;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  margin-bottom: 1vh;
+  // display: flex;
+  // flex-direction: column;
+  border-radius: 4px;
+  margin: 10px;
+  // margin-bottom: 10px;
+  width: 360px;
+  // height: auto;
 }
 
 .project-title {
-  margin: 0;
   color: $eerieBlack;
-  font-size: 16px;
+  font-size: 24px;
+  padding-top: 10px;
+  margin: 0;
 }
 
 .project-img {
-  margin: 10px;
+  margin: 20px 0 10px 0;
 }
 
 .project-button {
-  color: $azure;
   text-decoration: none;
-  padding: 0;
+  // padding: 0;
   text-align: left;
+
+  p {
+    color: $azure;
+    font-size: 18px;
+  }
 }
 
 .project-modal {
-  height: 100vh;
-
   a {
     color: $azure;
   }
+}
+
+.project-modal-title {
+  font-family: $globalFontFamily;
+  font-size: 32px;
 }
 
 .modal-img {
   margin-bottom: 10px;
 }
 
-//desktop
-@media (min-width: 768px) {
-  .project {
-    height: 40vh;
-    width: 40vw;
-  }
+// //desktop
+// @media (min-width: 768px) {
+//   .project {
+//     // height: 38%;
+//     // width: 45%;
+//   }
 
-    .project-title {
-    font-size: 22px;
-  }
-}
+//     .project-title {
+//     font-size: 22px;
+//   }
+// }
 
-//tablet
-@media (min-width: 576px) and (max-width: 768px) {
-  .project {
-    height: 28vh;
-    width: 50vw;
-  }
+// //tablet
+// @media (min-width: 576px) and (max-width: 768px) {
+//   .project {
+//     // height: 28%;
+//     // width: 50%;
+//   }
 
-  .project-title {
-    font-size: 22px;
-  }
+//   .project-title {
+//     font-size: 22px;
+//   }
 
-  .project-button {
-    font-size: 18px;
-  }
+//   .project-button {
+//     font-size: 18px;
+//   }
 
-  .project-modal-title {
-    font-size: 32px;
-  }
+//   .project-modal-title {
+//     font-size: 32px;
+//   }
 
-  .project-modal {
-    p, ul, a {
-      font-size: 22px;
-    }
-  }
-}
+//   .project-modal {
+//     p, ul, a {
+//       font-size: 22px;
+//     }
+//   }
+// }
 
-//phone
-@media (max-width: 576px) {
-  .project {
-    height: 29vh;
-    width: 70vw;
-  }
+// //phone
+// @media (max-width: 576px) {
+//   .project {
+//     // height: 29%;
+//     // width: 70%;
+//   }
 
-  .project-title {
-    font-size: 16px;
-  }
+//   .project-title {
+//     font-size: 16px;
+//   }
 
-  .project-button {
-    font-size: 14px;
-  }
+//   .project-button {
+//     font-size: 14px;
+//   }
 
-  .project-modal-title {
-    font-size: 20px;
-  }
+//   .project-modal-title {
+//     font-size: 20px;
+//   }
 
-  .project-modal {
-    p, ul, a {
-      font-size: 14px;
-    }
-  }
-}
+//   .project-modal {
+//     p, ul, a {
+//       font-size: 14px;
+//     }
+//   }
+// }

@@ -3,94 +3,93 @@
 
 .Stack {
   @include page-layout();
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  // flex-wrap: wrap;
 }
 
 .stack-list {
-  height: 92vh;
   padding: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 75%;
 }
 
 .stack-Container {
-  height: 140px;
-  width: 70px;
+  // height: 150px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  // padding: 5px;
+  // justify-content: space-evenly;
+// background-color: blue;
+//   // padding: 5px;
 }
 
 .stack-img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 .stack-title {
-  font-size: 12px;
+  // font-size: 12px;
   opacity: 0.5;
+  margin-top: 5px;
 }
 
-p {
-  padding: 0;
-  margin: 0;
-  color: $snow;
-}
+// p {
+//   padding: 0;
+//   margin: 0;
+// }
 
-//desktop
-@media (min-width: 768px) {
-  .stack-Container {
-    height: 170px;
-    width: 170px;
-  }
+// //desktop
+// @media (min-width: 768px) {
+//   .stack-Container {
+//     height: 170px;
+//     width: 170px;
+//   }
   
-  .stack-img {
-    width: 100px;
-    height: 110px;
-  }
+//   .stack-img {
+//     width: 100px;
+//     height: 110px;
+//   }
 
-  .stack-title {
-    font-size: 22px;
-  }
-}
+//   .stack-title {
+//     font-size: 22px;
+//   }
+// }
 
-//tablet
-@media (min-width: 576px) and (max-width: 768px) {
-  .stack-Container {
-    height: 200px;
-    width: 150px;
-  }
+// //tablet
+// @media (min-width: 576px) and (max-width: 768px) {
+//   .stack-Container {
+//     height: 200px;
+//     width: 150px;
+//   }
 
-  .stack-img {
-    width: 100px;
-    height: 100px;
-  }
+//   .stack-img {
+//     width: 100px;
+//     height: 100px;
+//   }
 
-  .stack-title {
-    font-size: 20px;
-  }
-}
+//   .stack-title {
+//     font-size: 20px;
+//   }
+// }
 
-//phone
-@media (max-width: 576px) {
-  .stack-Container {
-    height: 100px;
-    width: 70px;
-  }
+// //phone
+// @media (max-width: 576px) {
+//   .stack-Container {
+//     height: 100px;
+//     width: 70px;
+//   }
 
-  .stack-img {
-    width: 50px;
-    height: 50px;
-  }
+//   .stack-img {
+//     width: 50px;
+//     height: 50px;
+//   }
 
-  .stack-title {
-    font-size: 12px;
-  }
-}
+//   .stack-title {
+//     font-size: 12px;
+//   }
+// }

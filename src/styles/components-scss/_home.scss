@@ -5,29 +5,21 @@
   @include page-layout();
 }
 
-.hero-logo {
-  height: 46vh;
-}
-
 .hero-title-row {
+  min-height: 240px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: flex-start;
   align-items: center;
-  height: 46vh;
   text-align: center;
   width: 90%;
+//   height: 46%;
+//   padding-top: 15%;
 }
 
-// .hero-title-container {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   text-align: center;
-// }
-
 .arrow-down-row {
-  @include arrow-down();
+  // background-color: red;
+//   @include arrow-down();
 }
 
 @keyframes typing {
@@ -36,36 +28,34 @@
 }
 
 .typewriter-title {
-  color: $snow;
   font-size: 38px;
   text-align: center;
 }
 
 .typewriter-cursor {
-  color: $snow;
   font-size: 38px;
   opacity: 0.5;
   animation: blinkingCursor 1s;
   animation-iteration-count: infinite;
 }
 
-//desktop
+// //desktop
 @media (min-width: 768px) {
   .typewriter-cursor, .typewriter-title {
-    font-size: 62px;
+    font-size: 58px;
   }
 }
 
-//tablet
-@media (min-width: 576px) and (max-width: 768px) {
+// //tablet
+// @media (min-width: 576px) and (max-width: 768px) {
 
-}
+// }
 
-//phone
+// //phone
 @media (max-width: 576px) {
-  .typewriter-cursor, .typewriter-title {
-    font-size: 36px;
-  }
+//   .typewriter-cursor, .typewriter-title {
+//     font-size: 36px;
+//   }
 }
 
 @keyframes blinkingCursor {
