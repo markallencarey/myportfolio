@@ -1,32 +1,33 @@
 @import '../base-scss/variables';
 @import '../base-scss/mixins';
 
-// .Contact {
-//   @include page-layout();
+.Contact {
+  @include page-layout();
+  padding-bottom: 40px;
 //   justify-content: center;
 
-//   h1 {
-//     color: $azure;
-//   }
+  h1 {
+    color: $azure;
+  }
 
-//   a {
-//     text-decoration: none;
-//     color: $snow;
-//   }
+  a {
+    text-decoration: none;
+    color: $snow;
+  }
 
-//   a:hover {
-//     color: $azure;
-//   }
-// }
+  a:hover {
+    color: $fieryRose;
+  }
+}
 
-// .form-btn-primary {
-//   margin-top: 10px;
-// }
+.form-btn-primary {
+  margin-top: 10px;
+}
 
-// .form-control {
-//   height: 50px;
-//   font-size: 22px;
-// }
+.form-control {
+  // height: 50px;
+  // font-size: 22px;
+}
 
 // //desktop
 // @media (min-width: 768px) {
