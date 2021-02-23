@@ -3,28 +3,19 @@
 
 .Home {
   @include page-layout();
-}
-
-.hero-logo {
-  height: 46vh;
+  height: 100%;
 }
 
 .hero-title-row {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 46vh;
   text-align: center;
   width: 90%;
+  height: 46%;
+  padding-top: 15%;
 }
-
-// .hero-title-container {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   text-align: center;
-// }
 
 .arrow-down-row {
   @include arrow-down();
@@ -39,6 +30,7 @@
   color: $snow;
   font-size: 38px;
   text-align: center;
+  
 }
 
 .typewriter-cursor {
