@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
   // background-color: blanchedalmond;
   // padding: 0;
@@ -91,12 +91,12 @@
 
 .Tab-Title {
   text-align: center;
-  padding: 5px 0px;
+  padding: 10px 0px 20px 0px;
   color: $azure;
 }
 
 // //desktop
-@media (min-width: 768px) {
+@media (min-width: 828px) {
 //   .Carousel {
 //     height: 95vh;
 //   }
@@ -144,7 +144,7 @@
 }
 
 // //tablet
-// @media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 828px) {
 //   .Carousel {
 //     height: 95vh;
 //   }
@@ -153,10 +153,10 @@
 //     padding: 0 35px;
 //   }
 
-//   .resume-img {
-//     width: 220px;
-//     height: 220px;
-//   }
+  .resume-img {
+    width: 200px;
+    height: 200px;
+  }
 
 //   .click-photo {
 //     display: flex;
@@ -192,7 +192,7 @@
 //       font-size: 20px;
 //     }
 //   }
-// }
+}
 
 // //phone
 // @media (max-width: 320px) {

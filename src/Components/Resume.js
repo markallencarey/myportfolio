@@ -37,81 +37,82 @@ const Resume = (props) => {
         >
           <Container className='Tab-Title'>
             <h1>ABOUT</h1>
-            <Container className='about-imgs'>
-              <Image
-                className='resume-img'
-                rounded
-                xs={6} med={4}
-                src={MyPic}
-                onClick={handleShow1}
-              />
-              <Image
-                className='resume-img'
-                rounded
-                xs={6} med={4}
-                src={MyPic2}
-                onClick={handleShow2}
-              />
-              <Image
-                className='resume-img'
-                rounded
-                xs={6} med={4}
-                src={MyPic3}
-                onClick={handleShow3}
-              />
-            </Container>
-            <Container className='click-photo'>
-              <h6>Click image for enlarged photo</h6>
-            </Container>
-            <Modal
-              centered
-              className='resume-modal'
-              show={show1}
-              onHide={handleClose1}
-            >
-              <Modal.Header closeButton />
-              <Modal.Body>
-                <Image
-                  fluid
-                  rounded
-                  className='resume-img-modal'
-                  src={MyPic}
-                />
-              </Modal.Body>
-            </Modal>
-            <Modal
-              centered
-              className='resume-modal'
-              show={show2}
-              onHide={handleClose2}
-            >
-              <Modal.Header closeButton />
-              <Modal.Body>
-                <Image
-                  fluid
-                  rounded
-                  className='resume-img-modal'
-                  src={MyPic2}
-                />
-              </Modal.Body>
-            </Modal>
-            <Modal
-              centered
-              className='resume-modal'
-              show={show3}
-              onHide={handleClose3}
-            >
-              <Modal.Header closeButton />
-              <Modal.Body>
-                <Image
-                  fluid
-                  rounded
-                  className='resume-img-modal'
-                  src={MyPic3}
-                />
-              </Modal.Body>
-            </Modal>
           </Container>
+          <Container className='about-imgs'>
+            <Image
+              className='resume-img'
+              rounded
+              xs={6} med={4}
+              src={MyPic}
+              onClick={handleShow1}
+            />
+            <Image
+              className='resume-img'
+              rounded
+              xs={6} med={4}
+              src={MyPic2}
+              onClick={handleShow2}
+            />
+            <Image
+              className='resume-img'
+              rounded
+              xs={6} med={4}
+              src={MyPic3}
+              onClick={handleShow3}
+            />
+          </Container>
+          <Container className='click-photo'>
+            <h6>Click image for enlarged photo</h6>
+          </Container>
+          <Modal
+            centered
+            className='resume-modal'
+            show={show1}
+            onHide={handleClose1}
+          >
+            <Modal.Header closeButton />
+            <Modal.Body>
+              <Image
+                fluid
+                rounded
+                className='resume-img-modal'
+                src={MyPic}
+              />
+            </Modal.Body>
+          </Modal>
+          <Modal
+            centered
+            className='resume-modal'
+            show={show2}
+            onHide={handleClose2}
+          >
+            <Modal.Header closeButton />
+            <Modal.Body>
+              <Image
+                fluid
+                rounded
+                className='resume-img-modal'
+                src={MyPic2}
+              />
+            </Modal.Body>
+          </Modal>
+          <Modal
+            centered
+            className='resume-modal'
+            show={show3}
+            onHide={handleClose3}
+          >
+            <Modal.Header closeButton />
+            <Modal.Body>
+              <Image
+                fluid
+                rounded
+                className='resume-img-modal'
+                src={MyPic3}
+              />
+            </Modal.Body>
+          </Modal>
+
           <br />
           <Container className='Carousel-Info'>
             <h2>LEHI, UTAH</h2>

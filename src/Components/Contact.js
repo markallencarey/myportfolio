@@ -52,7 +52,7 @@ const Contact = (props) => {
   return (
     // <Div100vh>
       <Container fluid className='Contact'>
-        <h1>Contact Me:</h1>
+        <h1>CONTACT ME:</h1>
         <h3><a href="tel:+18013603072">801-360-3072</a></h3>
         <h3><a
           href="https://www.linkedin.com/in/markallencarey"
