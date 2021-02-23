@@ -4,7 +4,6 @@ import { IoIosArrowDown } from 'react-icons/io'
 import ShowRandomizer from '../assets/projects/showRandomizer-tiny.png'
 import krissbethsWorld from '../assets/projects/krissbethsWorld-tiny.png'
 import covid19Dashboard from '../assets/projects/covid19Dashboard-tiny.png'
-import Div100vh from 'react-div-100vh'
 
 const Projects = (props) => {
 

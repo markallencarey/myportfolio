@@ -4,7 +4,6 @@ import { IoIosArrowDown } from 'react-icons/io'
 import MyPic from '../assets/myPics/myPic-tiny.jpeg'
 import MyPic2 from '../assets/myPics/myPic2-tiny.jpeg'
 import MyPic3 from '../assets/myPics/myPic3-tiny.jpeg'
-import Div100vh from 'react-div-100vh'
 
 const Resume = (props) => {
 

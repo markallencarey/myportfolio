@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Modal, Form, Button } from "react-bootstrap";
 import axios from 'axios'
-import Div100vh from 'react-div-100vh'
 
 const Contact = (props) => {
 

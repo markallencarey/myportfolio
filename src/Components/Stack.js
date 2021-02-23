@@ -17,7 +17,6 @@ import Sass_Logo from '../assets/stack-logos/sass-1.svg'
 import Stripe_Logo from '../assets/stack-logos/stripe-4.svg'
 import { AiFillGithub } from 'react-icons/ai'
 import { IoIosArrowDown } from 'react-icons/io'
-import Div100vh from 'react-div-100vh'
 
 const Stack = (props) => {
 
