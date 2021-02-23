@@ -2,27 +2,25 @@
 @import '../base-scss/mixins';
 
 .Projects {
-  height: 100vh;
-  max-width: 100vw;
+  @include page-layout();
 }
 
 .project-list {
   padding: 20px;
-  height: 92vh;
 }
 
 .project {
   background-color: $snow;
-  height: 29vh;
-  width: 70vw;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   margin-bottom: 1vh;
+  height: 50%;
+  width: 45%;
 }
 
 .project-title {
-  margin: 0;
+  margin: 5px 0 0 10px;
   color: $eerieBlack;
   font-size: 16px;
 }
@@ -36,10 +34,10 @@
   text-decoration: none;
   padding: 0;
   text-align: left;
+  margin-left: 10px;
 }
 
 .project-modal {
-  height: 100vh;
 
   a {
     color: $azure;
@@ -53,8 +51,8 @@
 //desktop
 @media (min-width: 768px) {
   .project {
-    height: 40vh;
-    width: 40vw;
+    height: 50%;
+    width: 45%;
   }
 
     .project-title {
@@ -65,8 +63,8 @@
 //tablet
 @media (min-width: 576px) and (max-width: 768px) {
   .project {
-    height: 28vh;
-    width: 50vw;
+    height: 28%;
+    width: 50%;
   }
 
   .project-title {
@@ -91,8 +89,8 @@
 //phone
 @media (max-width: 576px) {
   .project {
-    height: 29vh;
-    width: 70vw;
+    height: 29%;
+    width: 70%;
   }
 
   .project-title {

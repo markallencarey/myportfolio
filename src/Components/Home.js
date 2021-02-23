@@ -10,7 +10,7 @@ const Home = (props) => {
   return (
     <Div100vh>
       <Container fluid className='Home'>
-        <Row>
+        <Row >
           <Col sm={12} className='hero-logo-col'>
             <Image src={Logo} fluid className='hero-logo' />
           </Col>
@@ -39,31 +39,3 @@ const Home = (props) => {
 }
 
 export default Home
-
-{/* <div>
-<Typewriter
-  options={{
-    // loop: true,
-    wrapperClassName: 'typewriter-title',
-    cursorClassName: 'typewriter-cursor'
-  }}
-  onInit={typewriter => {
-    typewriter.typeString('Full Stack Web Developer.')
-      .pauseFor(11000)
-      .start()
-  }}
-/>
-<Typewriter
-  options={{
-    // loop: true,
-    wrapperClassName: 'typewriter-title',
-    cursorClassName: 'typewriter-cursor'
-  }}
-  onInit={typewriter => {
-    typewriter.pauseFor(4000)
-      .typeString('Music Producer. Guitarist.')
-      .pauseFor(5000)
-      .start()
-  }}
-/>
-</div> */}
